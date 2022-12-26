@@ -1,0 +1,28 @@
+.social {
+    padding-top: 20px;
+    width: 100%;
+    margin-top: 65px;
+    background: linear-gradient(180deg, #0C0A0B 0%, rgba(12, 10, 11, 0.94) 21.88%, rgba(12, 10, 11, 0.94) 77.6%, #0C0A0B 100%), url('../../../public/img/background5.webp');
+    margin-bottom: 80px;
+}
+.title {
+    margin-bottom: 100px;
+}
+
+.footer {
+    margin-top: 130px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .social {
+        margin-top: 60px;
+        margin-bottom: 70px;
+    }
+    .title {
+        margin-bottom: 80px;
+    }
+    
+    .footer {
+        margin-top: 100px;
+    }
+}

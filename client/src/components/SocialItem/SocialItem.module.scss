@@ -1,0 +1,47 @@
+.item {
+    display: flex;
+    width: 100%;
+    position: relative;
+    background: url('../../../public/img/background4.jpg');
+    justify-content: space-between;
+    align-items: center;
+    height: 260px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    transform: rotate(-1deg);
+    &:last-child {
+        margin-bottom: 0
+    }
+    padding: 0 80px;
+}
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+    text-transform: uppercase;
+    max-width: 347px;
+}
+.image {
+    width: auto;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .item {
+        flex-direction: column;
+        height: 100%;
+        margin-bottom: 30px;
+        padding: 20px 20px;
+    }
+    .title {
+        font-size: 32px;
+        line-height: 48px;
+        text-align: center;
+        max-width: unset;
+        margin: 20px 0;
+    }
+    .image {
+        display: none;
+    }
+}

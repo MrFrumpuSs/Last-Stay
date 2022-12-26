@@ -1,0 +1,10 @@
+{
+    "serverPort": 8089,
+    "vkData": {
+        "client_id": 51512217,
+        "redirect_uri": "https://last-stay.ru:8080/api/auth/callback",
+        "scope": 1,
+        "display": "popup"
+    },
+    "client_secret": "6IYCoRBTf0QbQDzlg4L7"
+}

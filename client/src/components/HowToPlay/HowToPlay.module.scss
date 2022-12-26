@@ -1,0 +1,41 @@
+.howtoplay {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(12, 10, 11, 0.98), rgba(12, 10, 11, 0.98)), url('../../../public/img/background2.webp');
+    background-position: center center;
+    margin-top: 110px;
+    padding-bottom: 120px
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.middle_step {
+    margin-top: 30px;
+}
+
+.title {
+    margin-bottom: 100px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .howtoplay {
+        margin-top: 90px;
+        padding-bottom: 120px
+    }
+    
+    .steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+    }
+    
+    .middle_step {
+        margin-top: 0;
+    }
+    
+    .title {
+        margin-bottom: 50px;
+    }
+}
