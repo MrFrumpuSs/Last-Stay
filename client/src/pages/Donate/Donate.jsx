@@ -9,6 +9,7 @@ import User from '../../icons/User'
 import Ruble from '../../icons/Ruble'
 import Server from '../../icons/Server'
 import ArrowRight from '../../icons/ArrowRight'
+import Coupon from '../../icons/Coupon'
 import ManImage from '../../img/donate-man.webp'
 
 const Donate = () => {
@@ -22,6 +23,7 @@ const Donate = () => {
                             <Input className={styles.form_item} type='text' placeholder='Nick_Name' label='Никнейм' ico={<User color='#AD1601' width='24' height='24'></User>}></Input>
                             <Select className={styles.form_item} label='Сервер' options={[{value: 'srv01', name: 'Server 01'}, {value: 'srv02', name: 'Server 02'}]} ico={<Server color='#AD1601' width='24' height='24'></Server>}></Select>
                             <Input className={styles.form_item} type='number' placeholder='100' label='Сумма пополнения' ico={<Ruble color='#AD1601' width='24' height='24'></Ruble>}></Input>
+                            <Input className={styles.form_item} type='text' placeholder='Не обязательно' label='Промокод' ico={<Coupon color='#AD1601' width='24' height='24'></Coupon>}></Input>
                             <Button className={styles.btn}>Пополнить счет<ArrowRight color='#fff' width='30' height='30'></ArrowRight></Button>
                         </div>
                         <div className={styles.image}>

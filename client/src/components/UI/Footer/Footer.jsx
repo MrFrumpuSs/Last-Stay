@@ -1,5 +1,10 @@
 import React from 'react'
 import Logo from '../../../img/logo.svg'
+import Sbp from '../../../icons/Sbp';
+import Mir from '../../../icons/Mir';
+import MC from '../../../icons/MC';
+import Visa from '../../../icons/Visa';
+import VisaSecure from '../../../icons/VisaSecure';
 import { Link, useNavigate } from "react-router-dom";
 
 const Footer = ({className}) => {
@@ -26,6 +31,20 @@ const Footer = ({className}) => {
                     <li className="footer-menu__item"><Link to={'/donate'}>Донат</Link></li>
                     <li className="footer-menu__item"><Link to={'/vk'}>VK</Link></li>
                 </ul>
+                <ul className="footer-sec-menu">
+                    <li className='footer-sec-menu__item'><Link to={'/public-offer'}>Публичная оферта</Link></li>
+                    <li className='footer-sec-menu__item'><Link to={'/privacy-policy'}>Политика конфиденциальности</Link></li>
+                    <li className='footer-sec-menu__item'><Link to={'/payment-methods'}>Информация о способах оплаты</Link></li>
+                    <li className='footer-sec-menu__item'><Link to={'/information-security'}>Информационная безопасность</Link></li>
+                    <li className='footer-sec-menu__item'><Link to={'/refund-policy'}>Политика возврата платежей</Link></li>
+                </ul>
+                <div className="footer-payments">
+                    <Sbp className="footer-payments-item" width='70' color='#fff'></Sbp>
+                    <Mir className="footer-payments-item" width='70'></Mir>
+                    <MC className="footer-payments-item" width='70'></MC>
+                    <Visa className="footer-payments-item" width='70'></Visa>
+                    <VisaSecure className="footer-payments-item" width='70'></VisaSecure>
+                </div>
             </div>
        </footer>
     )

@@ -1,0 +1,15 @@
+.info_page {
+    padding-top: 130px;
+}
+.title {
+    margin-bottom: 50px;
+}
+.footer {
+    margin-top: 80px;
+}
+
+@media (min-width: 0) and (max-width: 768px) {
+    .title {
+        word-break: break-word;
+    }
+}

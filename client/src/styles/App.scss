@@ -76,6 +76,7 @@ body {
     }
     &-menu {
         display: flex;
+        margin-bottom: 20px;
     }
     &-menu__item {
         margin-right: 50px;
@@ -102,6 +103,39 @@ body {
         text-transform: uppercase;
         margin-bottom: 35px;
     }
+    &-sec-menu {
+        display: flex;
+        margin-bottom: 10px;
+    }
+    &-sec-menu__item {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 10px;
+            text-transform: uppercase;
+            transition: .2s;
+            color: #5c5c5c;
+        }
+        &:hover {
+            a {
+                color: #272727;
+            }
+        }
+    }
+    &-payments {
+        display: flex;
+        align-items: center;
+    }
+    &-payments-item {
+        margin-right: 20px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .navigation {
@@ -110,6 +144,9 @@ body {
     top: 0;
     width: 100%;
     padding-top: 40px;
+    .logo {
+        cursor: pointer;
+    }
     &__inner {
         display: flex;
         align-items: center;
@@ -296,6 +333,26 @@ body {
         &-menu__item {
             margin-right: 0;
             margin-bottom: 10px;
+        }
+        &-sec-menu {
+            flex-direction: column;
+            align-items: center;
+        }
+        &-sec-menu__item {
+            margin-right: 0;
+            margin-bottom: 10px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            a {
+                font-size: 11px;
+                line-height: 11px;
+            }
+        }
+        &-payments {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
