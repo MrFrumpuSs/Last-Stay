@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 import styles from './Hero.module.scss'
 import Girl from '../../img/girl.webp'
 import Figure from '../../img/figure.webp'

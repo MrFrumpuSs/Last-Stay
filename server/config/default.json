@@ -6,5 +6,9 @@
         "scope": 1,
         "display": "popup"
     },
-    "client_secret": "6IYCoRBTf0QbQDzlg4L7"
+    "client_secret": "6IYCoRBTf0QbQDzlg4L7",
+    "unitPay": {
+        "public_key": "440816-a5148",
+        "secret_key": "91AEB5BB42D-3CA77FA1ECB-ECA83F7717"
+    }
 }
