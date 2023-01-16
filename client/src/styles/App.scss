@@ -62,7 +62,18 @@ body {
 }
 
 .footer {
-    
+    &-contact {
+        font-size: 14px;
+        margin-top: 15px;
+        text-align: center;
+        a {
+            color: #5c5c5c;
+            transition: .2s;
+            &:hover {
+                color: #272727;
+            }
+        }
+    }
     &_inner {
         display: flex;
         flex-direction: column;
@@ -220,6 +231,13 @@ body {
 }
 
 @media (min-width: 0) and (max-width: 768px) {
+    .footer {
+        &-contact {
+            display: flex;
+            flex-direction: column;
+            line-height: 20px;
+        }
+    }
     .container {
         max-width: unset;
         padding: 0 20px;

@@ -58,6 +58,7 @@ const Donate = () => {
                             <Input error={errors.sum} errortxt='Поле не может быть пустым' className={styles.form_item} value={data.sum} onChange={e=> setData({...data, sum: e.target.value})} type='number' placeholder='100' label='Сумма пополнения' ico={<Ruble color='#AD1601' width='24' height='24'></Ruble>}></Input>
                             <Input className={styles.form_item} value={data.promo} onChange={e=> setData({...data, promo: e.target.value})} type='text' placeholder='Не обязательно' label='Промокод' ico={<Coupon color='#AD1601' width='24' height='24'></Coupon>}></Input>
                             <Button onClick={e=> redirectToDonate()} className={styles.btn}>Пополнить счет<ArrowRight color='#fff' width='30' height='30'></ArrowRight></Button>
+                            <p className={styles.course}>Курс покупки: 1 рубль = 1 донат рублей</p>
                         </div>
                         <div className={styles.image}>
                             <img src={ManImage} alt="man" title='man'/>

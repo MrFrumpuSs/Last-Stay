@@ -45,6 +45,7 @@ const Footer = ({className}) => {
                     <Visa className="footer-payments-item" width='70'></Visa>
                     <VisaSecure className="footer-payments-item" width='70'></VisaSecure>
                 </div>
+                <p className='footer-contact'>Свяжитесь с нами по почте: <a href="mailto:fan-game@internet.ru">fan-game@internet.ru</a></p>
             </div>
        </footer>
     )
