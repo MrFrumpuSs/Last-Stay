@@ -157,6 +157,9 @@ body {
     padding-top: 40px;
     .logo {
         cursor: pointer;
+        img {
+            max-width: 135px;
+        }
     }
     &__inner {
         display: flex;
