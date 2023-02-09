@@ -2,27 +2,82 @@
     padding-top: 20px;
     width: 100%;
     margin-top: 65px;
-    background: linear-gradient(180deg, #0C0A0B 0%, rgba(12, 10, 11, 0.94) 21.88%, rgba(12, 10, 11, 0.94) 77.6%, #0C0A0B 100%), url('../../../public/img/background5.webp');
     margin-bottom: 80px;
 }
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+}
 .title {
-    margin-bottom: 100px;
-}
-
-.footer {
-    margin-top: 130px;
-}
-
-@media (min-width: 0) and (max-width: 768px) {
-    .social {
-        margin-top: 60px;
-        margin-bottom: 70px;
+    margin-bottom: 80px;
+    text-align: left;
+    font-size: 63px;
+    line-height: 67px;
+    max-width: 557px;
+    &:before {
+        content: '';
+        top: 0px;
+        transform: translateX(230px);
+        z-index: -1;
+        position: absolute;
+        background: url('../../../public/img/spot3.svg') no-repeat;
+        background-size: 300px 300px;
+        width: 300px;
+        height: 300px;
     }
-    .title {
+}
+
+
+@media (min-width: 0) and (max-width: 1139px) {
+    .social {
+        padding-top: 0;
+        width: 100%;
+        margin-top: 40px;
         margin-bottom: 80px;
+        position: relative;
     }
     
-    .footer {
-        margin-top: 100px;
+    .flex {
+        justify-content: center;
+        
+    }
+    
+    .inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .right {
+        order: 0;
+        margin-bottom: 30px;
+        
+    }
+    .left {
+        order: 1;
+        img {
+            width: 100%;
+        }
+    }
+    .title {
+        font-size: 40px;
+        line-height: 51px;
+        margin-bottom: 40px;
+        &:before {
+            content: '';
+            top: 0px;
+            transform: translateX(130px);
+            z-index: -1;
+            position: absolute;
+            background: url('../../../public/img/spot3.svg') no-repeat;
+            background-size: 200px 200px;
+            width: 200px;
+            height: 200px;
+        }
     }
 }

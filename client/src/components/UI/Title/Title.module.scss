@@ -1,22 +1,12 @@
 .title {
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 40px;
+    font-family: 'SpriteGraffiti';
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 90px;
     text-transform: uppercase;
-    position: relative;
-    padding-bottom: 20px;
+    transform: rotate(-4.8deg);
     text-align: center;
-    &::before {
-        content: '';
-        position: absolute;
-        width: 200px;
-        height: 6px;
-        background: linear-gradient(151.63deg, #AD1601 13.48%, #851202 92.11%);
-        box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.25);
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    }
+    position: relative;
 }
 
 @media (min-width: 0) and (max-width: 768px) {

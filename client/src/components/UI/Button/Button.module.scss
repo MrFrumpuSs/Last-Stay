@@ -1,14 +1,13 @@
 .btn {
-    border-radius: 6px;
-    background: linear-gradient(151.63deg, #AD1601 13.48%, #851202 92.11%);
-    box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
-    height: 64px;
-    padding: 0 30px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 28px;
-    color: #F0FDF4;
+    background: linear-gradient(101.16deg, #C52B18 48.91%, #030101 114.15%);
+    border-radius: 83px;
+    padding: 16.5px 44px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 28px;
+    color: #fff;
     transition: .2s;
     &:hover {
         background: linear-gradient(151.63deg, #921100 13.48%, #530b02 92.11%);

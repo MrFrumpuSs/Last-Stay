@@ -22,12 +22,13 @@ a:hover{text-decoration: none;}
 ul li{list-style: none;}
 img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
-h1,h2,h3,h4,h5,h6,button,a,p,span,li {font-family: 'Muller'; color: #fff; font-weight: normal;}
+h1,h2,h3,h4,h5,h6,button,a,p,span,li {font-family: 'Inter', sans-serif; color: #fff; font-weight: normal;}
 /*--------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 @font-face{
-    font-family: 'Muller';
-    src: url('../fonts/MullerRegular.ttf');
+    font-family: 'SpriteGraffiti';
+    src: url('../fonts/Sprite Graffiti.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -52,16 +53,23 @@ h1,h2,h3,h4,h5,h6,button,a,p,span,li {font-family: 'Muller'; color: #fff; font-w
 }
 
 body {
-    background-color: #0C0A0B;
+    background-color: #181818;
 }
 
 .container {
-    max-width: 1310px;
+    max-width: 1368px;
     width: 100%;
     margin: 0 auto;
+    &.--big {
+        max-width: 1400px;
+    }
 }
 
 .footer {
+    padding: 50px 0;
+    width: 100%;
+    background: linear-gradient(180deg, #0C0A0B 0%, rgba(12, 10, 11, 0.94) 21.88%, rgba(12, 10, 11, 0.99) 45.6%, #0C0A0B 100%),  url('../../public/img/background5.webp');
+    background-position: bottom center;
     &-contact {
         font-size: 14px;
         margin-top: 15px;
@@ -150,11 +158,11 @@ body {
 }
 
 .navigation {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     top: 0;
     width: 100%;
-    padding-top: 40px;
+    padding-top: 30px;
     .logo {
         cursor: pointer;
         img {
@@ -175,21 +183,22 @@ body {
             display: flex;
             align-items: center;
             &__item {
-                margin-right: 60px;
+                margin-right: 38px;
                 position: relative;
                 a {
                     color: #fff;
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 16px;
                     text-transform: uppercase;
                     transition: .2s;
+                    opacity: 0.8;
                 }
                 &::before {
                     content: '';
                     position: absolute;
                     width: 0;
-                    height: 4px;
+                    height: 2px;
                     bottom: -10px;
                     left: 50%;
                     transform: translateX(-50%);
@@ -222,7 +231,7 @@ body {
         &__inner {
             .menu {
                 &__item {
-                    margin-right: 10px;
+                    margin-right: 30px;
                     a {
                         font-size: 14px;
                         line-height: 18px;
@@ -247,7 +256,7 @@ body {
     }
     .navigation {
         padding-top: 20px;
-        z-index: 2;
+        z-index: 3;
         padding-bottom: 50px;
         .enter {
             display: none;
@@ -272,7 +281,7 @@ body {
                 display: block;
                 width: 25px;
                 height: 2px;
-                background-color: #AD1601;
+                background-color: #fff;
             }
             &::before, &::after {
                 content: '';
@@ -281,7 +290,7 @@ body {
                 left: 0;
                 width: 25px;
                 height: 2px;
-                background-color: #AD1601;
+                background-color: #fff;
                 transition: .2s;
             }
             &::before {

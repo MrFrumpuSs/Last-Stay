@@ -3,7 +3,7 @@ import styles from './Step.module.scss'
 import Button from '../UI/Button/Button'
 
 
-const Step = ({step, title, description, btnName, link, background, className, href}) => {
+const Step = ({title, img, description, btnName, link, background, className, href}) => {
     
     function scrollIntoView(e) {
         e.preventDefault();
@@ -18,11 +18,14 @@ const Step = ({step, title, description, btnName, link, background, className, h
     }
 
    return (
-       <div className={[styles.step, className].join(' ')} style={{'background': 'linear-gradient(0deg, rgba(24, 15, 14, 0.92), rgba(24, 15, 14, 0.92)), url('+background+')'}}>
-            <span className={styles.number}>Шаг {step}</span>
-            <h3 className={styles.title}>{title}</h3>
-            <p className={styles.description}>{description}</p>
-            <Button onClick={e => scrollIntoView(e)} className={styles.btn} href={href}>{btnName}</Button>
+       <div className={[styles.step, className].join(' ')}>
+            <div className={styles.img}><img src={img} alt="ico" /></div>
+            <span className={styles.step_round}></span>
+            <div className={styles.content}>
+                <h3 className={styles.title}>{title}</h3>
+                <p className={styles.description}>{description}</p>
+                <Button onClick={e => scrollIntoView(e)} className={styles.btn} href={href}>{btnName}</Button>
+            </div>
        </div>
    )
 }

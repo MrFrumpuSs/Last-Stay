@@ -41,9 +41,7 @@ const Navbar = () => {
             <div className="navigation__inner container">
                 <div className="logo" onClick={e=> navigate("/", { replace: true })}><img src={Logo} alt="img" /></div>
                 <ul className={open ? 'menu active' : 'menu'}>
-                    <li className={location.pathname === '/' ? "menu__item active" : "menu__item"}><Link onClick={e=> closeBurger()} to={'/'}>Главная</Link></li>
                     <li className="menu__item"><a onClick={e => scrollIntoView(e)} href="#howtoplay">Как начать играть</a></li>
-                    <li className="menu__item"><a onClick={e => scrollIntoView(e)} href="#about">О нас</a></li>
                     <li className="menu__item"><Link to={'/forum'}>Форум</Link></li>
                     <li className={location.pathname === '/donate' ? "menu__item active" : "menu__item"}><Link onClick={e=> closeBurger()} to={'/donate'}>Донат</Link></li>
                     <li className={location.pathname === '/vk' ? "menu__item active" : "menu__item"}><Link onClick={e=> closeBurger()} to={'/vk'}>VK</Link></li>

@@ -1,0 +1,109 @@
+.item {
+    margin-bottom: 10px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:nth-child(even) {
+        .image {
+            order: 1;
+        }
+        .content {
+            order: 0;
+            justify-content: flex-end;
+            img {
+                right: unset;
+                left: -15px;
+            }
+        }
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .image {
+        display: block;
+        width: 745px;
+        height: 394px;
+        top: 0;
+    }
+    display: flex;
+    .content {
+        height: 394px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        img {
+            right: -15px;
+            position: absolute;
+            pointer-events: none;
+            user-select: none;
+        }
+        max-width: 640px;
+        width: 100%;
+    }
+    &_title {
+        font-family: 'SpriteGraffiti';
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 16px;
+    }
+    &_txt {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.8;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .text {
+        max-width: 541px;
+    }
+    
+}
+
+
+@media (min-width: 0) and (max-width: 1139px) {
+    .item {
+        margin-bottom: 80px;
+        &:nth-child(even) {
+            .image {
+                order: 0;
+            }
+            .content {
+                order: 1;
+                justify-content: flex-end;
+                img {
+                    right: unset;
+                    left: -15px;
+                }
+            }
+        }
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        .image {
+            width: 100%;
+            height: unset;
+            margin-bottom: 24px;
+        }
+        display: flex;
+        .content {
+            height: unset;
+            img {
+                display: none;
+            }
+        }
+        &_title {
+            font-size: 32px;
+            line-height: 60px;
+            margin-bottom: 0;
+        }
+        .text {
+            max-width: 541px;
+        }
+        
+    }
+}

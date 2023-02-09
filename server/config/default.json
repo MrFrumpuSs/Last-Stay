@@ -1,12 +1,12 @@
 {
     "serverPort": 8089,
     "vkData": {
-        "client_id": 51512217,
-        "redirect_uri": "https://last-stay.ru:8080/api/auth/callback",
+        "client_id": 51511502,
+        "redirect_uri": "https://laststay.beknazaryanstudio.ru:8080/api/auth/callback",
         "scope": 1,
         "display": "popup"
     },
-    "client_secret": "6IYCoRBTf0QbQDzlg4L7",
+    "client_secret": "3dY7G2sJznWSuHuDHARK",
     "unitPay": {
         "public_key": "440816-a5148",
         "secret_key": "91AEB5BB42D-3CA77FA1ECB-ECA83F7717"

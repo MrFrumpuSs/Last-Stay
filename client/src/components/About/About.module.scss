@@ -1,42 +1,94 @@
 .about {
     position: relative;
     width: 100%;
-    padding-top: 80px;
-    background: url('../../../public/img/background3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
-    padding: 100px 0;
+    height: 1100px;
+}
+
+.inner {
+    display: flex;
 }
 
 .title {
     margin-bottom: 70px;
+    font-size: 63px;
+    line-height: 59px;
+    text-align: left;
+
+    span {
+        color: #FF0000;
+        font-family: 'SpriteGraffiti';
+    }
 }
 
 .p {
-    font-weight: 500;
+    max-width: 464px;
+    font-weight: normal;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
     margin-bottom: 25px;
     &:last-child {
         margin-bottom: 0;
     }
 }
+.left {
+    padding-top: 200px;
+    width: 561px;
+}
+.right {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    transform: translateY(50%);
+    user-select: none;
+    pointer-events: none;
+    img {
+        user-select: none;
+        pointer-events: none;
+    }
+}
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 0) and (max-width: 1139px) {
     .about {
-        padding-top: 70px;
-        padding: 80px 0;
+        position: relative;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: unset;
+    }
+    
+    .inner {
+        display: flex;
+        flex-direction: column;
     }
     
     .title {
-        margin-bottom: 50px;
+        margin-bottom: 35px;
+        font-size: 40px;
+        max-width: 330px;
+        line-height: 39px;
+        text-align: left;
+    
+        span {
+            color: #FF0000;
+            font-family: 'SpriteGraffiti';
+        }
     }
     
-    .p {
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 20px;
-        margin-bottom: 20px;
+    .left {
+        padding-top: 0px;
+        width: 100%
+    }
+    .right {
+        position: relative;
+        right: 40px;
+        margin-top: 20px;
+        bottom: unset;
+        transform: unset;
+        img {
+            width: calc(100% + 60px);
+           
+        }
     }
 }

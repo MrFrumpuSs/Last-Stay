@@ -4,21 +4,60 @@
     background: radial-gradient(97.82% 97.82% at 49.01% 3.56%, rgba(152, 0, 0, 0.2) 0%, rgba(27, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.92) 0%, rgba(12, 10, 11, 0.92) 76.04%, #0C0A0B 100%), url('../../../public/img/background5.webp');
 }
 
+.spot4 {
+    position: absolute;
+    left: 0;
+}
+.spot5 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 .title {
-    margin-top: 50px
+    margin-top: 50px;
+    margin-bottom: 100px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 30px;
+        transform: translateX(-60px);
+        background: url('../../../public/img//spot1.svg') no-repeat;
+        background-position: center center;
+        width: 100px;
+        height: 100px;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        top: -50px;
+        transform: translateX(-70px);
+        background: url('../../../public/img//spot2.svg') no-repeat;
+        background-position: center center;
+        width: 100px;
+        height: 100px;
+    }
 }
 
 .content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    position: relative;
 }
 
 .image {
+    position: absolute;
     pointer-events: none;
     user-select: none;
     img {
         width: 100%;
+    }
+    left: 0;
+    &:last-child {
+        left: unset;
+        right: 0;
     }
 }
 
@@ -51,15 +90,35 @@
     padding-bottom: 80px;
 }
 
-@media (min-width: 0) and (max-width: 768px) {
+@media (min-width: 0) and (max-width: 1139px) {
     .donate {
         width: 100%;
         padding-top: 100px;
+        padding-bottom: 550px;
+        overflow: hidden;
     }
-    
+    .spot4 {
+        display: none;
+    }
+    .spot5 {
+        display: none;
+    }
     .title {
         margin-top: 40px;
         margin-bottom: 50px;
+        &::before {
+            top: -10px;
+            transform: translateX(-45px);
+            background-size: 80px 80px;
+            width: 80px;
+            height: 80px;
+        }
+        &::after {
+            top: -50px;
+            transform: translateX(-70px);
+            width: 80px;
+            height: 80px;
+        }
     }
     
     .content {
@@ -69,10 +128,24 @@
     }
     
     .image {
-        display: none;
+        position: absolute;
+        order: 1;
+        bottom: -550px;
+        width: 275px;
+        left: calc(50% - 120px);
+        transform: translateX(-50%);
+        &:last-child {
+            left: calc(50% + 120px);
+
+            width: 350px;
+        }
+        img {
+            width: inherit;
+        }
     }
     
     .form {
+        order: 0;
         width: 100%;
     }
     
