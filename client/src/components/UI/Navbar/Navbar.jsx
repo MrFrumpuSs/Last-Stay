@@ -25,6 +25,9 @@ const Navbar = () => {
 
     useEffect(() => {
         if(location.hash) {
+            if(open) {
+                closeBurger();
+            }
             let elem = document.querySelector(location.hash);
             elem.scrollIntoView({block: "start", behavior: "smooth"});
         }
