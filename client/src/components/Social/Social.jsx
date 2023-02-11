@@ -19,7 +19,7 @@ const Social = () => {
                     <Title className={styles.title}>Присоединяйся к нам в социальных сетях</Title>
                     <div className={styles.flex}>
                         <SocialItem icon={<Vk width='100' height='100' color="#fff"/>} link="https://vk.com/last_stay"></SocialItem>
-                        <SocialItem icon={<Discord width='100' height='100' color="#fff"/>} link="https://google.com"></SocialItem>
+                        <SocialItem icon={<Discord width='100' height='100' color="#fff"/>} link="https://discord.gg/NSCsMHSE9x"></SocialItem>
                     </div>
                 </div>
             </div>
