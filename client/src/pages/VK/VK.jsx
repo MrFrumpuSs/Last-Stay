@@ -30,7 +30,7 @@ const VK = () => {
     
 
     const redirectToVkAuth = () => {
-        const vkLoginURL = "https://laststay.beknazaryanstudio.ru:8080/api/auth/vk";
+        const vkLoginURL = "https://last-stay.ru:8080/api/auth/vk";
         const newWindow = window.open(vkLoginURL, '_blank', 'width=500, height=600');
         let timer = setInterval(() => {
             if(Cookies.get('id') !== undefined) {
